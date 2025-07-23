@@ -1,75 +1,44 @@
 {
-  "name": "selenium-webdriver",
-  "version": "4.34.0",
-  "description": "The official WebDriver JavaScript bindings from the Selenium project",
-  "license": "Apache-2.0",
-  "keywords": [
-    "automation",
-    "selenium",
-    "testing",
-    "webdriver",
-    "webdriverjs"
-  ],
-  "homepage": "https://github.com/SeleniumHQ/selenium/tree/trunk/javascript/selenium-webdriver#readme",
-  "bugs": {
-    "url": "https://github.com/SeleniumHQ/selenium/issues"
-  },
-  "main": "./index",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/SeleniumHQ/selenium.git"
-  },
-  "engines": {
-    "node": ">= 20.0.0"
-  },
+  "name": "linkedin",
+  "version": "0.1.0",
+  "private": true,
   "dependencies": {
-    "@bazel/runfiles": "^6.3.1",
-    "jszip": "^3.10.1",
-    "tmp": "^0.2.3",
-    "ws": "^8.18.2"
-  },
-  "devDependencies": {
-    "@eslint/js": "^9.18.0",
-    "clean-jsdoc-theme": "^4.3.0",
-    "eslint": "^9.18.0",
-    "eslint-config-prettier": "^10.0.1",
-    "eslint-plugin-mocha": "^10.5.0",
-    "eslint-plugin-n": "^17.15.1",
-    "eslint-plugin-no-only-tests": "^3.3.0",
-    "eslint-plugin-prettier": "^5.2.1",
-    "express": "^4.21.2",
-    "globals": "^15.14.0",
-    "has-flag": "^5.0.1",
-    "jsdoc": "^4.0.4",
-    "mocha": "^11.0.1",
-    "mocha-junit-reporter": "^2.2.1",
-    "multer": "1.4.5-lts.2",
-    "prettier": "^3.4.2",
-    "serve-index": "^1.9.1",
-    "sinon": "^19.0.5",
-    "supports-color": "^10.0.0"
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "bootstrap": "^5.2.3",
+    "cors": "^2.8.5",
+    "csv-writer": "^1.6.0",
+    "dotenv": "^16.0.3",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-scripts": "5.0.1",
+    "selenium": "^2.20.0",
+    "selenium-webdriver": "^4.8.1",
+    "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "lint": "eslint .",
-    "lint:fix": "eslint . --fix",
-    "test": "bazel test //javascript/selenium-webdriver/...",
-    "generate-docs": "jsdoc --configure jsdoc_conf.json --verbose"
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
   },
-  "mocha": {
-    "recursive": true,
-    "timeout": 600000
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
   },
-  "publishConfig": {
-    "registry": "https://registry.npmjs.org/"
-  },
-  "funding": [
-    {
-      "type": "github",
-      "url": "https://github.com/sponsors/SeleniumHQ"
-    },
-    {
-      "type": "opencollective",
-      "url": "https://opencollective.com/selenium"
-    }
-  ]
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
 }
